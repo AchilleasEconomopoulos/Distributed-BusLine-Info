@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Jalopy</string>
+    <string name="google_maps_key">AIzaSyCSWDmlByvcwtwWo6nmR9-ScCfDvA_hR0s</string>
+    <string name="title_activity_maps">Map</string>
+    <string-array name="busLines">
+        <item>021</item>
+        <item>022</item>
+        <item>024</item>
+        <item>025</item>
+        <item>026</item>
+        <item>027</item>
+        <item>032</item>
+        <item>035</item>
+        <item>036</item>
+        <item>040</item>
+        <item>046</item>
+        <item>049</item>
+        <item>051</item>
+        <item>054</item>
+        <item>057</item>
+        <item>060</item>
+        <item>1</item>
+        <item>10</item>
+    </string-array>
+</resources>
