@@ -20,6 +20,7 @@ All the above connections represent many-to-many relationships, meaning that:
 - One broker can be connected to multiple publishers and vice versa.
 - One subscriber can be connected to multiple brokers and vice versa.
 
+<br></br>
 
 ### Implementing the model with the push / pull functions
 - Push: the publisher feeds the connected brokers with information in the form of (Bus line, [Latitude, Longitude]) pairs that are subsequently stored in the brokers' storage.
@@ -35,6 +36,8 @@ All the above connections represent many-to-many relationships, meaning that:
 In this implementation of the system, the sensors are replaced with computers that simply read text files with predefined bus line information the moment they are "powered up".
 
 ### IMPORTANT NOTE: **This implementation assumes that the brokers are always up and running so it is important that the Broker main classes are all run before the Publisher main classes in order for the application to function correctly.**
+
+<br></br>
 
 Having said that, the whole Distributed Application can be split into two parts:
 
@@ -61,6 +64,8 @@ Having said that, the whole Distributed Application can be split into two parts:
 		- Gradle Version: 8.0.2
 		- Java Sdk: 1.8
 		- Android Virtual Device: Pixel 3 API 31
+ 
+<br></br>
 
 The different applications communicate with the use of socket programming and exchange bus line information objects with the help of JSON libraries (turning objects to strings and vice versa).
 
