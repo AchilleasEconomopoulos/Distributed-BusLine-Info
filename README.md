@@ -27,6 +27,10 @@ All the above connections represent many-to-many relationships, meaning that:
 
 <br></br>
 
+-----
+
+<br></br>
+
 ## The implementation
 In this implementation of the system, the sensors are replaced with computers that simply read text files with predefined bus line information the moment they are "powered up".
 
@@ -34,7 +38,7 @@ In this implementation of the system, the sensors are replaced with computers th
 
 Having said that, the whole Distributed Application can be split into two parts:
 
-- The Publisher and Broker applications: two simple Java applications.
+- ### The Publisher and Broker applications: two simple Java applications.
 	- #### The publisher:
  		- Reads txt files to determine which Bus Lines are assigned to it.
    		- Starts reading a txt file that simulates live bus position updates and simultaneously sends them out to the registered brokers (reads 1 update per second).
@@ -46,8 +50,9 @@ Having said that, the whole Distributed Application can be split into two parts:
      - Listens for connections for both Publishers and Subscribers.
      - Pushes (adds) the updates received from the publishers into the corresponding queues.
      - Pulls (removes) the updates from their corresponding queues and sends them to the subscribers interested.
-         
-- The Subscriber Android application using Google Maps:
+
+
+- ### The Subscriber Android application using Google Maps:
 	- The app UI consists of a simple menu and a Google Maps fragment (using the Google Maps API)
 	- When new bus line information is received, it is visualized with a pin on the Maps fragment.
 	- Tested On:
