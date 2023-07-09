@@ -5,7 +5,7 @@ This is a distributed Java application emulating a bus tracking system, a projec
 
 <br></br>
 
-## The idea
+## The Model
 
 
 ### Using the Publisher - Broker - Subscriber model
@@ -28,16 +28,19 @@ All the above connections represent many-to-many relationships, meaning that:
 
 <br></br>
 
------
 
 <br></br>
 
 ## The implementation
-In this implementation of the system, the sensors are replaced with computers that simply read text files with predefined bus line information the moment they are "powered up".
+In this implementation of the system, the sensors are replaced with computers that simply read text files with predefined bus line information the moment they are "powered up". In addition, the subscribers are Android devices.
 
-### IMPORTANT NOTE: **This implementation assumes that the brokers are always up and running so it is important that the Broker main classes are all run before the Publisher main classes in order for the application to function correctly.**
+------
 
-<br></br>
+### IMPORTANT NOTE 1:
+### **It is assumed that the brokers are always up and running. It is important that the Broker main classes are all run before the Publisher main classes in order for the application to function correctly.**
+
+------
+
 
 Having said that, the whole Distributed Application can be split into two parts:
 
@@ -64,12 +67,16 @@ Having said that, the whole Distributed Application can be split into two parts:
 		- Gradle Version: 8.0.2
 		- Java Sdk: 1.8
 		- Android Virtual Device: Pixel 3 API 31
- 
-<br></br>
+
+------
+
+### IMPORTANT NOTE 2:
+### **The Android application requires a valid Google API Key to be generated on the Google Cloud platform and integrated into the Android studio project. Instructions on how to do so can be found [on the official Maps SDK for Android Documentation](https://developers.google.com/maps/documentation/android-sdk/start).**
+------
+
 
 The different applications communicate with the use of socket programming and exchange bus line information objects with the help of JSON libraries (turning objects to strings and vice versa).
 
 <br></br>
 
-------
 #### A more detailed project description along with the full list of features required to be implemented by the students of the course it is given [here](Project-Distributed-2019.pdf) in Greek.
