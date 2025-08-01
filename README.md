@@ -77,8 +77,5 @@ Having said that, the whole Distributed Application can be split into two parts:
 
 The different applications communicate with the use of socket programming and exchange bus line information objects with the help of JSON libraries (turning objects to strings and vice versa).
 
-<br></br>
-
-#### A more detailed project description along with the full list of features required to be implemented by the students of the course it is given [here](Project-Distributed-2019.pdf) in Greek.
 
 **Contributors: [@achilleas155](https://github.com/achilleas155), [@TrifonasB](https://github.com/TrifonasB), [@pankarast](https://github.com/pankarast)**
